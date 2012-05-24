@@ -1,0 +1,31 @@
+
+<div width="100%" height="100%" style="overflow: hidden">
+  <div style="width: 100%; height: 27px; background: #f8f5f2 url(/media/images/firefox_menubar.png) no-repeat left top; position: relative; top: 0px;">
+    &nbsp;
+  </div>
+  
+  <div style="width: 100%; position: relative; top: 0px; height: 37px; border-bottom: 1px solid #aaa;">
+    <table style="width: 100%; height: 37px; margin-top: 0px;" 
+           cellpadding="0" cellspacing="0">
+      <tr>
+        <td style="width: 203px; height: 37px; margin-top: 0px;">
+          <img src="/media/images/firefox_buttons_left.png"/>
+        </td>
+        <td style="vertical-align: top; padding-top: 8px; width: 37%; height: 37px">
+          <input id="addressbar" name="addressbar" onKeyDown="addressbarKeyDown (event);">
+        </td>
+        <td style="width: 17px; height: 37px; vertical-align: top; padding-top: 8px">
+          <img src="/media/images/firefox_menubar_down.png" alt="down" title="down"/>
+        </td>
+        <td style="padding-left: 0px; height: 37px; vertical-align: top; padding-top: 8px">
+          <img src="/media/images/firefox_menubar_right.png" alt="go" title="go" onClick="addressbarGo();"/>
+        </td>
+      </tr>
+    </table>
+  </div>
+  
+  <div style="width: 100%">
+    <iframe id="framebody" width="100%" height="100%" src="http://www.google.com/firefox">
+    </iframe>
+  </div>
+</div>

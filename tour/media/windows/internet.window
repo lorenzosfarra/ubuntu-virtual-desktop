@@ -1,0 +1,63 @@
+[FIREFOX]
+title=Mozilla Firefox
+icon=/media/images/windows/icons/firefox.png
+width=600
+height=500
+maxw=1280
+maxh=1024
+minw=289
+minh=289
+alt=firefox
+ititle=firefox
+
+[EVOLUTION]
+title=Evolution Mail
+icon=/media/images/windows/icons/evolution.png
+width=600
+height=500
+maxw=1280
+maxh=1024
+minw=289
+minh=289
+alt=evolution
+ititle=evolution
+image=/media/images/windows/evolution.png
+
+[EKIGA]
+title=Softphone Ekiga
+icon=/media/images/windows/icons/ekiga.png
+width=328
+height=356
+maxw=348
+maxh=376
+minw=343
+minh=349
+image=/media/images/windows/ekiga.png
+alt=Softphone Ekiga
+ititle=Softphone Ekiga
+
+[GAIM]
+title=Pidgin
+icon=/media/images/windows/icons/pidgin.png
+width=250
+height=405
+maxw=250
+maxh=405
+minw=200
+minh=250
+image=/media/images/windows/pidgin.png
+alt=Elenco contatti
+ititle=Elenco contatti
+
+[TERMSERVERCLIENT]
+title=Client per terminal server
+icon=/media/images/windows/icons/terminal_server.png
+width=428
+height=517
+maxw=428
+maxh=517
+minw=428
+minh=517
+image=/media/images/windows/terminal_server.png
+alt=Client per terminal server
+ititle=Client per terminal server

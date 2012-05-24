@@ -1,0 +1,152 @@
+body {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  background-image: url(/media/images/presentation/background.png);
+  background-repeat: repeat-x;
+  background-position: left top;
+  color: #ffffff;
+  font: 0.8em sans-serif;
+}
+
+h1 {
+  font-size: 1.3em;
+  margin-bottom: 0px;
+}
+
+#languages {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+}
+
+#languages table {
+  color: #ccc;
+  font-size: 0.6em;
+}
+
+#presentation {
+  margin-left: 15%;
+  margin-top: 20px;
+}
+
+#presentation h2 {
+  margin-top: 0px;
+  font-size: 0.8em;
+  color: #aaaaaa;
+}
+
+#central {
+  margin-top: 10px;
+  margin-left: 15%;
+}
+
+#central a, #central a:visited, #central a:hover, #central a:active {
+  text-decoration: none;
+  color: #aaaaaa;
+  background: #000000 url(/media/images/presentation/li_bg.gif) no-repeat left;
+  list-style: none;
+  padding-left: 20px;
+  font-size: 0.9em;
+}
+
+#central ul {
+  list-style: none;
+}
+
+#central ul li {
+  margin-top: 8px;
+}
+
+.separator {
+  background-image: url(/media/images/presentation/separator.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  height: 1px;
+  width: 300px;
+}
+
+.language_active {
+  opacity: 1.0;
+}
+
+.language_inactive {
+  opacity: 0.4;
+}
+
+#description {
+  margin-left: 15%;
+  margin-top: 15px;
+}
+
+#description table {
+  border: none;
+  height: 150px;
+  width: 500px;
+}
+
+#description table td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+#description .active {
+  background: #000;
+  height: 100px;
+  vertical-align: top;
+}
+
+#description_body {
+  padding: 0;
+  margin: 0;
+  background: #000000;
+  border: none;
+  font-size: 0.8em;
+  height: 100%;
+}
+
+#desc_body {
+  text-align: left;
+  line-height: 20px;
+  padding-left: 30px;
+  margin-top: 15px;
+  font-size: 0.9em;
+}
+
+.importantp {
+  text-align: left;
+}
+
+#desc_body .importantlink, #desc_body .importantlink:visited {
+  text-decoration: none;
+  color: #aaaaaa;
+  font-weight: bold;
+  font-size: 1.2em;
+  border: none;
+}
+
+#desc_body .importantlink:hover {
+  color: #da3b3b;
+  border: none;
+}
+
+.importantp img {
+  border: none;
+  vertical-align: middle;
+}
+
+#desc_body a, #desc_body a:visited {
+  color: #aaaaaa;
+  border-bottom: 1px dotted #aaaaaa;
+  text-decoration: none;
+}
+
+#desc_body a:hover {
+  color: #ffffff;
+  border-bottom: 1px dotted #ffffff;
+}

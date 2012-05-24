@@ -1,0 +1,27 @@
+    <div id="menu_internet" class="menus">
+
+      {% for id in internet %}
+
+        {% ifequal id.0 "item" %}
+          <a href="javascript:loadProgram('{{ id.2 }}');" alt="{{ id.3 }}" title="{{ id.3 }}">
+            {% include "applications/menuentry.html" %}
+          </a>
+
+	      {% else %}{% ifequal id.0 "iframe" %}
+        <!-- For now only Firefox use an iframe, but in the future...
+             who knows? -->
+          <a href="javascript:loadFrame ('{{ id.2 }}');" alt="{{ id.3 }}"
+                                                         title="{{ id.3 }}">
+            {% include "applications/menuentry.html" %}
+          </a>
+
+        {% else %}
+            
+            <div class="separator">
+              <hr />
+            </div>
+
+	      {% endifequal %}
+	      {% endifequal %}
+      {% endfor %}
+    </div>

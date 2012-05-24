@@ -1,0 +1,77 @@
+    <div id="places" class="menus">
+
+      {% for id in places %}
+
+        {% ifequal id.0 "item" %}
+<!-- {{ id.3 }} -->
+            {% ifequal id.4 "active" %}
+              <a href="javascript:loadProgram('{{ id.2 }}');" alt="{{ id.3 }}" title="{{ id.3 }}">
+            {% endifequal %}
+            <div class="item" 
+                 id="{{ id.2 }}" 
+                 onmouseover="hover('{{ id.2 }}', true);" 
+                 onmouseout="hover('{{ id.2 }}', false);">
+              <table class="entry">
+                <tr>
+                  <!-- icon -->
+                  <td class="icon">
+                    <img src="/media/images/menu/places/{{ id.1 }}" alt="{{ id.1 }}" title="{{ id.1 }}"/>
+
+                  </td>
+                  
+                  <!-- category -->
+                  <td class="category">
+                    {{ id.3 }}
+                  </td>
+
+                  {% ifnotequal id.4 "active" %}
+                  <!-- arrow -->
+                  <td class="arrow">
+                    <img src="/media/images/menu/arrow.png" alt="arrow"
+                                                            title="arrow"/>
+                  </td>
+                  {% endifnotequal %}
+
+                </tr>
+              </table>
+            </div>
+            {% ifequal id.4 "active" %}
+              </a>
+            {% endifequal %}
+	      {% else %}{% ifequal id.0 "deactivated" %}
+          
+            <div class="deactivated">
+              <table class="entry">
+                <tr>
+                  <!-- icon -->
+                  <td class="icon">
+                    <img src="/media/images/menu/places/{{ id.1 }}" alt="{{ id.1 }}" title="{{ id.1 }}"/>
+
+                  </td>
+                  
+                  <!-- category -->
+                  <td class="category deactivated">
+                    {{ id.3 }}
+                  </td>
+
+                  <!-- arrow -->
+                  <td class="arrow">
+                    <img src="/media/images/menu/arrow_deactivated.png" 
+                         alt="arrow deactivated"
+                         title="arrow deactivated" />
+                  </td>
+
+                </tr>
+              </table>
+            </div>
+
+        {% else %}
+            
+            <div class="separator">
+              <hr />
+            </div>
+
+	      {% endifequal %}
+	      {% endifequal %}
+      {% endfor %}
+    </div>

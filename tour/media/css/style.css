@@ -1,0 +1,42 @@
+body {
+  position: absolute;
+  margin: 0px 0px;
+  background: url('/media/images/background.png');
+  background-position: right bottom;
+  font: 12px Verdana, Arial, Helvetica, Sans-Serif;
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  margin: 0px 0px;
+  width: 100%;
+  height: 100%;
+}
+
+#desktop_icons {
+  position: absolute;
+  margin-left: 2%;
+  top: 40px;
+}
+
+iframe {
+  border: 0px;
+  overflow: auto;
+}
+
+input {
+/*  border: 1px solid #8f4b1e;*/
+    border: 1px solid #96969d;
+    width: 100%;
+    height: 22px;
+}
+
+
+/* Applications specific style */
+
+/* FIREFOX */
+#addressbar {
+  font-size: 12px;
+  vertical-align: middle;
+}

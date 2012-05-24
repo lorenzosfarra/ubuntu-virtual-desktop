@@ -1,0 +1,99 @@
+body {
+  background: #000000;
+  color: #cccccc;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  font: 0.8em Verdana, Arial, sans-serif;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  background-image: url(/media/images/presentation/background.png);
+  background-repeat: repeat-x;
+  background-position: left top;
+}
+
+.text {
+  width: 500px;
+  line-height: 1.5em;
+  margin-left: 15%;
+  padding-right: 45px;
+  font: 0.9em Verdana, Arial, sans-serif;
+}
+
+ol {
+  margin-left: 40px;
+}
+
+ol li {
+  margin-top: 15px;
+}
+
+h1 {
+  font-size: 1.3em;
+  color: #f8f8f8;
+  width: 70%;
+  margin-left: 8px;
+  margin-top: 20px;
+  padding-left: 10px;
+}
+
+
+h2 {
+  font-size: 1.1em;
+  color: #cccccc;
+  width: 70%;
+  margin-left: 8px;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.main {
+  background: url(/media/images/about/desktop.png) no-repeat left center;
+  padding-left: 60px;
+}
+
+.contacts {
+  background: url(/media/images/about/contact.png) no-repeat left center;
+  height: 92px;
+  padding-left: 60px;
+}
+
+.techinfo {
+  background: url(/media/images/about/tech.png) no-repeat left center;
+  height: 92px;
+  padding-left: 60px;
+}
+
+a, a:visited {
+  color: #aaaaaa;
+  border-bottom: 1px dotted #aaaaaa;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffffff;
+  border-bottom: 1px dotted #ffffff;
+  text-decoration: none;
+}
+
+.separator {
+  background-image: url(/media/images/presentation/separator.png);
+  background-position: left;
+  background-repeat: no-repeat;
+  margin-left: 20px; 
+  margin-bottom: 10px; 
+  height: 1px;
+  width: 300px;
+}
+
+.back {
+  background: url(/media/images/presentation/go.gif) no-repeat left center;
+  margin-top: 15px;
+  padding-left: 30px;
+  margin-left: 300px;
+  font-weight: bold;
+}
+

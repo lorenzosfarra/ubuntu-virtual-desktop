@@ -1,0 +1,38 @@
+[HELP]
+title=Help and Support
+icon=/media/images/windows/icons/help.png
+width=543px
+height=392px
+maxw=548px
+maxh=412px
+minw=438px
+minh=289px
+image=/media/images/windows/help.png
+alt=help
+ititle=help
+
+[ABOUTGNOME]
+title=About GNOME
+icon=/media/images/windows/icons/aboutgnome.png
+width=652px
+height=401px
+maxw=652px
+maxh=401px
+minw=552px
+minh=289px
+image=/media/images/windows/aboutgnome.png
+alt=about gnome
+ititle=about gnome
+
+[ABOUTUBUNTU]
+title=About Ubuntu
+icon=/media/images/windows/icons/aboutubuntu.png
+width=483px
+height=321px
+maxw=483px
+maxh=321px
+minw=352px
+minh=289px
+image=/media/images/windows/aboutubuntu.png
+alt=about ubuntu
+ititle=about ubuntu

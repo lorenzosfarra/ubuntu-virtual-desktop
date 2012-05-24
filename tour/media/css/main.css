@@ -1,0 +1,13 @@
+body {
+  margin: 0px 0px;
+  color: black;
+  background: url('/media/images/background.png');
+  background-position: 0px 0px;
+}
+
+#main {
+  margin: 0px 0px;
+  width: 100%;
+  height: 100%;
+}
+

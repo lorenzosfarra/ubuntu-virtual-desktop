@@ -1,0 +1,13 @@
+[GIMP]
+title=The GIMP
+icon=/media/images/windows/icons/gimp.png
+width=276px
+height=497px
+maxw=276px
+maxh=497px
+minw=138px
+minh=289px
+image=/media/images/windows/gimp.png
+alt=gimp
+ititle=gimp
+

@@ -1,0 +1,103 @@
+[COMPUTER]
+title=Computer - File Browser
+icon=/media/images/windows/icons/nautilus.png
+width=484px
+height=360px
+maxw=484px
+maxh=360px
+minw=300px
+minh=253px
+image=/media/images/windows/computer.png
+alt=computer
+ititle=computer
+
+[NAUTILUS]
+title=user - File Browser
+icon=/media/images/windows/icons/nautilus.png
+width=504px
+height=340px
+maxw=514px
+maxh=343px
+minw=200px
+minh=233px
+image=/media/images/windows/nautilus.png
+alt=computer
+ititle=computer
+
+[DOCUMENTS]
+title=Documents - File Browser
+icon=/media/images/windows/icons/nautilus.png
+width=500px
+height=350px
+maxw=520px
+maxh=370px
+minw=300px
+minh=260px
+image=/media/images/windows/documents.png
+alt=documents
+ititle=documents
+
+[DESKTOP]
+title=Desktop - File Browser
+icon=/media/images/windows/icons/nautilus.png
+width=500px
+height=350px
+maxw=520px
+maxh=370px
+minw=300px
+minh=260px
+image=/media/images/windows/desktop.png
+alt=desktop
+ititle=desktop
+
+[NAUTILUSCDBURNER]
+title=CD/DVD Creator
+icon=/media/images/windows/icons/nautilus.png
+width=516px
+height=325px
+maxw=530px
+maxh=370px
+minw=300px
+minh=260px
+image=/media/images/windows/nautiluscdburner.png
+alt=cd/dvd creator
+ititle=cd/dvd creator
+
+[NETWORK]
+title=Network
+icon=/media/images/windows/icons/nautilus.png
+width=516px
+height=325px
+maxw=530px
+maxh=370px
+minw=300px
+minh=260px
+image=/media/images/windows/network.png
+alt=network
+ititle=network
+
+[FIND]
+title=Search for Files
+icon=/media/images/windows/icons/find.png
+width=520px
+height=325px
+maxw=530px
+maxh=370px
+minw=300px
+minh=260px
+image=/media/images/windows/find.png
+alt=search for files
+ititle=search for files
+
+[CONNECTTO]
+title=Connect to Server
+icon=/media/images/windows/icons/folder.png
+width=540px
+height=275px
+maxw=560px
+maxh=320px
+minw=300px
+minh=260px
+image=/media/images/windows/connectto.png
+alt=connect to
+ititle=connect to

@@ -1,0 +1,35 @@
+    <div id="menu_media" class="menus">
+
+      {% for id in media %}
+
+        {% ifequal id.0 "item" %}
+<!-- {{ id.3 }} -->
+          <a href="javascript:loadProgram('{{ id.2 }}');" alt="{{ id.3 }}" title="{{ id.3 }}">
+            <div class="item" 
+                 id="{{ id.2 }}" 
+                 onmouseover="hover('{{ id.2 }}', true);" 
+                 onmouseout="hover('{{ id.2 }}', false);">
+              <table class="entry">
+                <tr>
+                  <!-- icon -->
+                  <td class="icon" colspan="2">
+                    <img src="/media/images/menu/media/{{ id.1 }}" alt="{{ id.1 }}" title="{{ id.1 }}"/>
+                  </td>
+                  
+                  <!-- category -->
+                  <td class="category">
+                    {{ id.3 }}
+                  </td>
+                </tr>
+              </table>
+            </div>
+              </a>
+	      {% else %}
+            
+            <div class="separator">
+              <hr />
+            </div>
+
+	      {% endifequal %}
+      {% endfor %}
+    </div>

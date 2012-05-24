@@ -1,0 +1,67 @@
+    <div id="system" class="menus">
+
+      {% for id in system %}
+        {% ifequal id.0 "item" %}
+<!-- {{ id.3 }} -->
+            {% ifequal id.4 "active" %}
+              <!-- Special case: in System we can have 'Quit'. -->
+              {% ifequal id.2 "quit" %}
+                <a href="/presentation/" alt="Quit" title="Quit">
+              {% else %}
+                <a href="javascript:loadProgram('{{ id.2 }}');"
+                   alt="{{ id.3 }}" title="{{ id.3 }}">
+              {% endifequal %}
+            <div class="item" 
+                 id="{{ id.2 }}" 
+                 onmouseover="hover_and_hide('{{ id.2 }}', true,
+                                             'system');" 
+                 onmouseout="hover('{{ id.2 }}', false);">
+            {% else %}
+            <div class="item" 
+                 id="{{ id.2 }}" 
+                 onmouseover="hover('{{ id.2 }}', true);" 
+                 onmouseout="hover('{{ id.2 }}', false);">
+
+            {% endifequal %}
+              <table class="entry">
+                <tr>
+                  <!-- icon -->
+                  {% ifequal id.4 "active" %}
+                  <td class="icon" colspan="2">
+                    <img src="/media/images/menu/system/{{ id.1 }}" alt="{{ id.1 }}" title="{{ id.1 }}"/>
+		              
+                  {% else %}
+                  <td class="icon">
+                    <img src="/media/images/menu/system/{{ id.2 }}/{{ id.1 }}" alt="{{ id.1 }}" title="{{ id.1 }}"/>
+                  {% endifequal %}
+
+                  </td>
+                  
+                  <!-- category -->
+                  <td class="category">
+                    {{ id.3 }}
+                  </td>
+
+                  {% ifnotequal id.4 "active" %}
+                  <!-- arrow -->
+                  <td class="arrow">
+                    <img src="/media/images/menu/arrow.png" alt="arrow"
+                                                            title="arrow"/>
+                  </td>
+                  {% endifnotequal %}
+
+                </tr>
+              </table>
+            </div>
+            {% ifequal id.4 "active" %}
+              </a>
+            {% endifequal %}
+	      {% else %}
+            
+            <div class="separator">
+              <hr />
+            </div>
+
+	      {% endifequal %}
+      {% endfor %}
+    </div>

@@ -1,0 +1,51 @@
+[OODATABASE]
+title=OpenOffice.org - Database
+icon=/media/images/windows/icons/oo_database.png
+width=936px
+height=442px
+maxw=936px
+maxh=442px
+minw=700px
+minh=300px
+image=/media/images/windows/oo_database.png
+alt=OpenOffice.org - Database
+ititle=OpenOffice.org - Database
+
+[OOPRESENTATION]
+title=OpenOffice.org - Impress
+icon=/media/images/windows/icons/oo_impress.png
+width=857px
+height=458px
+maxw=857px
+maxh=458px
+minw=700px
+minh=300px
+image=/media/images/windows/oo_impress.png
+alt=OpenOffice.org - Impress
+ititle=OpenOffice.org - Impress
+
+[OOSPREADSHEET]
+title=OpenOffice.org - Calc
+icon=/media/images/windows/icons/oo_calc.png
+width=800px
+height=500px
+maxw=1015px
+maxh=636px
+minw=400px
+minh=350px
+image=/media/images/windows/oo_calc.png
+alt=OpenOffice.org - Calc
+ititle=OpenOffice.org - Calc
+
+[OOWORD]
+title=OpenOffice.org - Writer
+icon=/media/images/windows/icons/oo_writer.png
+width=700px
+height=600px
+maxw=895px
+maxh=705px
+minw=400px
+minh=350px
+image=/media/images/windows/oo_writer.png
+alt=OpenOffice.org - Writer
+ititle=OpenOffice.org - Writer

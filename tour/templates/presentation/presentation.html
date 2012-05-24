@@ -1,0 +1,97 @@
+<html>
+
+<head>
+  <title>Ubuntu Virtual Desktop :: Presentation</title>
+  <link rel="stylesheet" type="text/css" href="/media/css/presentation.css"/>
+  <script type="text/javascript" language="javascript" src="/media/js/ajax.js"></script>
+  <script type="text/javascript" language="javascript" 
+          src="/media/js/presentation.js"></script>
+</head>
+
+<body>
+  <div id="languages">
+    <table cellpadding="1" cellspacing="1">
+      <tr>
+        <td>
+          <img src="/media/images/presentation/flag_english.gif" alt="en"
+               class="language_active"/>
+        </td>
+        <td>::</td>
+        <td>
+          <img src="/media/images/presentation/flag_italian.gif" alt="it"
+               class="language_inactive" />
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="presentation">
+    <h1>Ubuntu Virtual Desktop</h1>
+    <h2>An interactive presentation through the web.</h2>
+    <div class="separator"></div>
+    <br/>
+    <img src="/media/images/presentation/logo.png" alt="logo" title="logo"/>
+    <div class="separator"></div>
+  </div>
+
+  <div id="central">
+    <h1>Quick Links</h1>
+    
+    <ul>
+      <li>
+        <!--
+        < a id="tourlink" href="/splash/"
+           onMouseOver="fadeTextHover('tour');"
+           onMouseOut="fadeTextOut('tour');">Start The Tour &raquo;</ a>-->
+
+        <a id="tourlink" href="/static/UVDG"
+           onMouseOver="fadeTextHover('tour');"
+           onMouseOut="fadeTextOut('tour');">Start The Tour &raquo;</a>
+      </li>
+
+      <li>
+        <a id="ubuntulink" href="http://www.ubuntu.com"
+           onMouseOver="fadeTextHover('ubuntu');"
+           onMouseOut="fadeTextOut('ubuntu');">What's Ubuntu? &raquo;</a>
+      </li>
+
+      <li>
+        <a id="downloadlink" href="http://www.ubuntu.com/getubuntu/"
+           onMouseOver="fadeTextHover('download');"
+           onMouseOut="fadeTextOut('download');">Get Ubuntu &raquo;</a>
+      </li>
+
+      <li>
+        <a id="otherlink" href="/about/"
+           onMouseOver="fadeTextHover('other');"
+           onMouseOut="fadeTextOut('other');">About: Author, Project, Other ... &raquo;</a>
+      </li>
+    </ul>
+
+  </div>
+  
+
+  <div id="description">
+    <table cellpadding="0" cellspacing="0">
+      <tr>
+        <td class="active">
+          <img id="activeimg" src="/media/images/presentation/tour.png"
+               alt="tour" title="tour" />
+        </td>
+        <td>
+          <div id="description_body">
+            <h1 id="desc_head">&laquo; The Tour &raquo;</h1>
+            <div id="desc_body">
+              {% include "presentation/tour.html" %}
+            </div>
+          </div>
+        </td>
+      </tr>
+          
+    </table>
+    <br />
+  </div>
+
+</body>
+
+</html>

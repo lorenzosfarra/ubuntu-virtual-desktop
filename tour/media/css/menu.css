@@ -1,0 +1,104 @@
+div.menus {
+  background-color: #f8f5f2;
+  border: 1px solid #aaaaaa;
+  font: 12px Verdana, Arial, Helvetica, Sans-Serif;
+  z-index: 10000;
+  overflow: hidden;
+  display: none;
+}
+
+div.menus a:link, div.menus a:visited, div.menus a:hover, div.menus a:active {
+  text-decoration: none;
+  color: #000000;
+}
+
+div.menus img {
+  border: none;
+}
+
+div.item {
+  height: 30px;
+  background-color: #f8f5f2;
+  border: 1px solid transparent;
+  font: 12px Verdana, Arial, Helvetica, Sans-Serif;
+}
+
+div.deactivated {
+  
+  height: 30px;
+  background-color: #f8f5f2;
+  border: 1px solid transparent;
+  font: 12px Verdana, Arial, Helvetica, Sans-Serif;
+  color: #aaaaaa;
+
+}
+
+table.entry {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+table.entry tr {
+  height: 100%;
+  background-color: transparent;
+}
+
+td.icon {
+  width: 10%;
+  height: 100%;
+  background-color: transparent;
+}
+
+td.category {
+  width: 80%;
+  height: 100%;
+  background-color: transparent;
+  font: 12px Verdana, Arial, Helvetica, Sans-Serif;
+}
+
+td.deactivated {
+  color: #aaaaaa;
+}
+
+td.arrow {
+  text-align: right;
+  height: 100%;
+  width: 10%;
+  background-color: transparent;
+}
+
+div.separator {
+  height: 12px;
+  background-color: #f8f5f2;
+  border: 1px solid transparent;
+}
+
+div.separator hr {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#applications {
+  position:absolute;
+  top: 25px;
+  left: 0px;
+  width: 165px;
+  visibility: hidden;
+}
+
+#places {
+  position: absolute;
+  width: 185px;
+  visibility: hidden;
+  top: 25px;
+  left: 117px;
+}
+
+#system {
+  position: absolute;
+  width: 165px;
+  visibility: hidden;
+  top: 25px;
+  left: 172px;
+}

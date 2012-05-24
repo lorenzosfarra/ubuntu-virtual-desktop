@@ -1,0 +1,13 @@
+[ADDREMOVE]
+title=Add/Remove Applications
+icon=/media/images/windows/icons/addremove.png
+width=456px
+height=401px
+maxw=558px
+maxh=401px
+minw=338px
+minh=289px
+image=/media/images/windows/addremove.png
+alt=addremove
+ititle=addremove
+

@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <title>Ubuntu Virtual Desktop</title>
+    
+    <link rel="stylesheet" type="text/css" href="/media/css/splash.css"/>
+    <script type="text/javascript" language="javascript">
+      if (typeof (XMLHttpRequest) != 'undefined') {
+        /* Not IE6 (GOOOOOD!) */
+        document.write('<link rel="stylesheet" href="/media/css/splash.css" type="text/css">');
+      } else {
+        document.write('<link rel="stylesheet" href="/media/css/splash_ie6.css" type="text/css">');
+      }
+      
+    </script>
+    <script type="text/javascript" language="javascript"
+            src="/media/js/splash.js"></script>
+  </head>
+
+ <body onLoad="startProgressActions();">
+    
+    <!-- Logo -->
+    <div id="logo">
+      <img src="/media/images/splash/logo.png"
+           alt="splash" title="splash"
+           width="418" height="135" />
+    </div>
+
+    <!-- Bar -->
+    <div id="bar">
+      
+      <div id="progressbar_div">
+
+        <table id="progressbar" cellspacing="0" cellpadding="0">
+
+        <!-- We have to set a TD that represents the top border
+             of the progress bar. Why we use 'colspan="20" is
+             explained below. -->
+
+        
+        <!-- Set 13 (is the number in the real progress bar)
+             TR of the same type 'cause, at first,
+             the percentage is 0%. Set the border left and right, too. -->
+
+        <tr>
+          <!-- Load and use custom templatetag -->
+        {% load percentage_iteration %}
+        {% percentage_cycle 18 %}
+
+          
+            <td class="percentagebar">
+              <img id="percentage{{ percentage.iter }}"
+                   src="/media/images/splash/progressbar_black.png"
+                   alt="progress bar"
+                   title="progress bar" />
+            </td>
+
+        {% endpercentage_cycle %}
+
+          <!-- Border right -->
+        </tr>
+
+        </table>
+      </div>
+
+    </div>
+    
+    <!-- End Bar --> 
+
+    <div id="activitieslog">
+    </div>
+
+  </body>
+</html>

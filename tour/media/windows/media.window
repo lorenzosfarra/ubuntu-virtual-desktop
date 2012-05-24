@@ -1,0 +1,51 @@
+[TOTEM]
+title=Movie Player
+icon=/media/images/windows/icons/totem.png
+width=301px
+height=325px
+maxw=301px
+maxh=325px
+minw=284px
+minh=205px
+image=/media/images/windows/totem.png
+alt=totem
+ititle=totem
+
+[RHYTHMBOX]
+title=Rhythmbox Music Player
+icon=/media/images/windows/icons/rhythmbox.png
+width=555px
+height=412px
+maxw=555px
+maxh=412px
+minw=415px
+minh=302px
+image=/media/images/windows/rhythmbox.png
+alt=rhythmbox
+ititle=rhythmbox
+
+[SERPENTINE]
+title=Serpentine Audio CD Creator
+icon=/media/images/windows/icons/serpentine.png
+width=367px
+height=311px
+maxw=367px
+maxh=311px
+minw=267px
+minh=211px
+image=/media/images/windows/serpentine.png
+alt=serpentine
+ititle=serpentine
+
+[GRECORD]
+title=Sound Recorder
+icon=/media/images/windows/icons/grecord.png
+width=378px
+height=335px
+maxw=378px
+maxh=310px
+minw=284px
+minh=205px
+image=/media/images/windows/grecord.png
+alt=grecord
+ititle=grecord

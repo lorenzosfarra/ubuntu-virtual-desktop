@@ -1,0 +1,189 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/media/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/media/css/menu.css" />
+    <link rel="stylesheet" type="text/css" href="/media/css/floatingpane.css" />
+    <link rel="stylesheet" type="text/css" href="/media/css/submenus.css" />
+    <link rel="stylesheet" type="text/css" href="/media/css/panel.css" />
+    <link rel="stylesheet" type="text/css" href="/media/css/bottompanel.css" />
+    <script type="text/javascript" language="javascript" 
+            src="/media/js/menu.js"></script>
+    
+    <script type="text/javascript" language="javascript"
+            src="/media/js/panel.js"></script>
+    
+    <script type="text/javascript" language="javascript"
+            src="/media/js/desktop.js"></script>
+    
+    <script type="text/javascript" language="javascript"
+            src="/media/js/ajax.js"></script>
+   
+   <script type="text/javascript" language="javascript"
+            src="/media/js/programs.js"></script>
+    
+    <script type="text/javascript" language="javascript" 
+            src="/media/js/framesjs.js"></script>
+    
+    <script type="text/javascript" language="javascript" 
+            src="/media/js/various.js"></script>
+    
+    <!-- DOJO -->
+    <script type="text/javascript" language="javascript" 
+            src="/media/js/dojo/dojo.js"></script>
+    
+    <script type="text/javascript">
+      
+      dojo.require ("dojo.widget.*");
+      dojo.require ("dojo.html.*");
+      dojo.require ("dojo.string.*");
+      dojo.require ("dojo.dnd.*");
+      dojo.require ("dojo.event.*");
+      dojo.require ("dojo.lang.*");
+      dojo.require ("dojo.widget.TaskBar");
+      dojo.require ("dojo.widget.LayoutContainer");
+      dojo.require ("dojo.widget.FloatingPane");
+      dojo.require ("dojo.widget.ResizeHandle");
+
+    </script>
+
+    <title>Ubuntu Virtual Desktop</title>
+
+  </head>
+
+  <body onLoad="FreshLoaded()">
+
+    <div id="main">
+
+    <!-- DESKTOP -->
+
+    {% include "desktoparea/icons.html" %}
+
+    <!-- TOP PANEL -->
+    <div id="panel">
+      <!-- MAIN MENU -->
+
+      <!-- Applications -->
+      <div id="button_applications">
+          <img id="img_applications" src="/media/images/menu/applications.png"
+                                     alt="Applications" 
+                                     title="Applications"
+                             onClick="showmenu('applications');"
+                             onmouseover="checkmenus('applications');"/>
+      </div>
+
+      <!-- Places -->
+      <div id="button_places">
+        <img id="img_places" src="/media/images/menu/places.png"
+                             alt="Places"
+                             title="Places" 
+                             onClick="showmenu('places');" 
+                             onmouseover="checkmenus('places');"/>
+      </div>
+
+      <!-- System -->
+      <div id="button_system">
+        <img id="img_system" src="/media/images/menu/system.png"
+                             alt="System"
+                             title="System" 
+                             onClick="showmenu('system');"
+                             onmouseover="checkmenus('system');" />
+      </div>
+      
+      <!-- Firefox -->
+      <div id="button_firefox">
+        <img id="img_firefox" src="/media/images/menu/firefox.png" 
+                              alt="Firefox" 
+                              title="Firefox" 
+                              onmouseover="over_image('firefox', true);" 
+                              onmouseout="over_image('firefox', false);"
+                              onclick="loadFrame('firefox');" />
+      </div>
+
+      <!-- Evolution -->
+      <div id="button_evolution">
+        <img id="img_evolution" src="/media/images/menu/evolution.png" 
+                                alt="Evolution"
+                                title="Evolution"
+                                onmouseover="over_image('evolution', true);" 
+                                onmouseout="over_image('evolution',false);"
+                                onclick="loadProgram('evolution');" />
+      </div>
+    </div>
+
+    <!-- APPLICATIONS -->
+    {% include "applications/applications.html" %}
+      <!-- Accessories -->
+      {% include "applications/accessories.html" %}
+      <!-- Games -->
+      {% include "applications/games.html" %}
+
+      <!-- Graphics -->
+      {% include "applications/graphics.html" %}
+
+      <!-- Internet -->
+      {% include "applications/internet.html" %}
+
+      <!-- Office -->
+      {% include "applications/office.html" %}
+
+      <!-- Sound &amp; Video -->
+      {% include "applications/soundandvideo.html" %}
+
+    
+
+    <!-- PLACES -->
+    {% include "places/places.html" %}
+
+    <!-- SYSTEM -->
+    {% include "system/system.html" %}
+
+    <!-- Show data and time -->
+    <!-- <div dojoType="datepicker"></div>-->
+    <div id="dateandtime">
+      {% now "D M d, g:i A" %}
+    </div>
+
+    <!-- Logout -->
+    <div id="logout">
+        <img id="img_logout" src="/media/images/menu/logout.png" 
+                                alt="Logout"
+                                title="Logout"
+                                onmouseover="over_image('logout', true);" 
+                                onmouseout="over_image('logout',false);"
+                                onclick="location.href='/presentation/'"/>
+    </div>
+    
+    <!-- END TOP PANEL -->
+
+    <!-- BOTTOM PANEL -->
+
+    <div id="bottompanel">
+      <div id="bottomshowdesktop">
+        <img id="img_showdesktop" src="/media/images/menu/showdesktop.png" 
+                                alt="Show desktop"
+                                title="Show desktop"
+                                onmouseover="over_image('showdesktop', true);" 
+                                onmouseout="over_image('showdesktop',false);"
+                                onclick="showdesktop();"/>
+      </div>
+
+      <div id="bottomwindowslist">
+      </div>
+
+      <div id="bottomtrash">
+        <img id="img_trash" src="/media/images/menu/trash.png" 
+                                alt="Trash"
+                                title="Trash"
+                                onclick="loadProgram('trash');" />
+      </div>
+
+    </div>
+
+    <!-- END BOTTOM PANEL -->
+
+
+
+    </div>
+  
+  </body>
+</html>
